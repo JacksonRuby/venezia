@@ -29,7 +29,7 @@ namespace venezia
 
             services.AddDbContext<veneziaContext>(options =>
                 options.UseMySql(
-                    Configuration.GetConnectionString("veneziaConnection")));
+                    Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
